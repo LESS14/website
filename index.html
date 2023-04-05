@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe | LESS14</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/static/frameworks/cache/bootstrap/css/bootstrap-min.css">
+    <script type="text/javascript" src="./assets/static/frameworks/cache/jquery/js/jquery-min.js"></script>
+    <script type="text/javascript" src="./assets/static/frameworks/cache/popper/js/popper-min.js"></script>
+    <script type="text/javascript" src="./assets/static/frameworks/cache/bootstrap/js/bootstrap-min.js"></script>
+</head>
+<body class="body-main">
+    <div class="root">
+        <div class="nav-links-styler">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#" style="color: #d3d0d0;">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./about.html">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="btn-dev" style="cursor: pointer;">Projetos</a>
+                  </li>
+                  </ul>
+                </div>
+        </nav>
+        <div class="content">
+            <h2>Olá, me chamo Felipe e tenho 23 anos e trabalho com programação</h2>
+        </div>
+            <h2 style="text-align:center;">Seja bem-vindo(a) ao meu site!</h2>
+        <div class="dc-status">
+            <img class="loading" alt="Loading..." src="./assets/images/loading.webp" style="height:5em;">
+            <img alt="Discord Status" style="display: none;" class="dc-card" src="https://lanyard.cnrad.dev/api/879190916894711869" title="Discord Status">
+        </div>
+
+        <footer class="footer-basic">
+            <ul class="footer-links">
+            <li class="footer-link"><a>&copy; Felipe - Todos os direitos reservados.</a></li>
+            <li class="footer-link" style="padding:5px;"><a class="idiom-change"><a class="en-idiom" title="Click here to change the idiom / Clique aqui para mudar o idioma">This site is still under development. And this is just a sketch.</a></a>
+            <a class="pt-idiom" style="display: none;" title="Click here to change the idiom / Clique aqui para mudar o idioma">Este site está sob desenvolvimento! Isto é apenas um esboço.</a>
+            </li>
+
+        </ul>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./assets/static/frameworks/cache/sweetalert2/js/sweetalert2-min.js"></script>
+    <script>
+    $('#btn-dev').click(() => {
+        Swal.fire({
+        icon: 'error',
+        text: 'This page is still under development...',
+        toast: true,
+        confirmButtonText: "Okay!",
+        timerProgressBar: true,
+        timer: 3000,
+        });
+            })
+
+    setInterval(function() {
+    $('.dc-card').show();
+    $('.loading').hide();
+    }, 2500);
+
+    $('.en-idiom').click(function() {
+        $('.en-idiom').hide();
+        $('.pt-idiom').show();
+    });
+
+    $('.pt-idiom').click(function() {
+        $('.pt-idiom').hide();
+        $('.en-idiom').show();
+    });
+    </script>
+</body>
+</html>

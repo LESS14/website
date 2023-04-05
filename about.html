@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe | LESS14</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/static/frameworks/cache/bootstrap/css/bootstrap-min.css">
+    <script type="text/javascript" src="./assets/static/frameworks/cache/jquery/js/jquery-min.js"></script>
+    <script type="text/javascript" src="./assets/static/frameworks/cache/popper/js/popper-min.js"></script>
+    <script type="text/javascript" src="./assets/static/frameworks/cache/bootstrap/js/bootstrap-min.js"></script>
+</head>
+<body class="body-main">
+    <div class="root">
+        <div class="nav-links-styler">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#" style="color: #d3d0d0;">Sobre</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id="btn-dev" style="cursor: pointer;">Projetos</a>
+                  </li>
+                  </ul>
+                </div>
+        </nav>
+        <div class="content">
+        </div>
+
+        <div class="bio" id="bio">
+            <div class="break">
+            <h2 style="font-size: 24px;">Sobre mim:</h2>
+            <ul class="bio-list">
+            <li class="bio-li"><p>Tenho 23 anos</p></li>
+            <li class="bio-li"><p>Programo há mais de 5 anos</p></li>
+            <li class="bio-li"><p>Tenho uma vasta experiência em desenvolvimento web</p></li>
+            <li><p>Mensagem do desenvolvedor: Isso foi um pouco sobre mim. Adicionarei mais coisas aqui futuramente...</p></li>
+        </ul>
+        </div>
+        </div>
+
+        <footer class="footer-basic">
+            <ul class="footer-links">
+            <li class="footer-link"><a>&copy; Felipe - Todos os direitos reservados.</a></li>
+        </ul>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="./assets/static/frameworks/cache/sweetalert2/js/sweetalert2-min.js"></script>
+    <script>
+    $('#btn-dev').click(() => {
+        Swal.fire({
+        icon: 'error',
+        text: 'This page is still under development...',
+        toast: true,
+        confirmButtonText: "Okay!",
+        timerProgressBar: true,
+        timer: 3000,
+        });
+            })
+    </script>
+</body>
+</html>
