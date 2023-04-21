@@ -1,0 +1,52 @@
+.body {
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+}
+
+:root {
+    --bg-color: #010e25e0;
+    --txt-color: #ffffff;
+}
+
+.experiences {
+    padding: 5rem;
+}
+
+.container {
+    padding: 5rem;
+    text-align: center;
+}
+
+.others {
+    padding: 5rem;
+}
+
+.techs {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    overflow: auto;
+    line-height: 1.5;
+}
+
+.break ul {
+    list-style: none;
+}
+
+.site-map {
+    display: flex;
+    align-items: center;
+    flex-direction: wrap;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.break {
+    flex-basis: 100%;
+}
+
+.techs img {
+    border-radius: 50%;
+}
