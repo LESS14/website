@@ -4,9 +4,9 @@
 <h3>Bem-vindo ao repositório oficial do meu site pessoal!</h3>
 
 <hr>
+</div>
 <h2>Links</h2>
 <ul class="links">
 <li><a href="https://less14.github.io/website/" target="_blank">Site</a></li>
 <li><a href="https://www.linkedin.com/in/felipe-maciel-56b594270/" target="_blank">Linkedin</a></li>
 </ul>
-</div>
