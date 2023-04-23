@@ -1,0 +1,15 @@
+footer {
+    user-select: none;
+}
+
+footer i:hover {
+    opacity: 50%;
+}
+
+footer a {
+    user-select: none;
+}
+
+.footer-end {
+    padding: 1rem;
+}
