@@ -49,8 +49,8 @@
                     <h2>Seja bem-vindo ao meu site!</h2>
                 </div>
                 <div class="about" id="sobre">
-                    <p>Tenho 23 anos e sou desenvolvedor web full-stack e formado em Sistemas de
-                        Informação</p>
+                    <p>Me chamo Felipe e tenho 23 anos e sou desenvolvedor web full-stack e formado em Análise & Desenvolvimento de
+                        software</p>
                 </div>
                 <div class="experiences" id="experiencias">
                     <h3>Algumas das linguagens e tecnologias que já trabalhei:</h3>
@@ -61,10 +61,13 @@
                                         width="35"><a> HTML/CSS</a></li>
                                 <li class="list-link"><img class="js" src="./assets/images/langs/lang-javascript.png"
                                         width="35"><a> Javascript</a></li>
+                               <div> <li class="list-link" id="stack"><img class="js" src="./assets/images/langs/lang-python.png"
+                                            width="35"><a> Python</a></li></div>
                                 <!--<li class="list-link"><img class="pawn" src="./assets/images/langs/lang-pawn.png" width="35"><a> Pawn</a></li>
                     <li class="list-link"><img class="php" src="./assets/images/langs/lang-php.png" width="35"><a> PHP</a></li>!-->
-                                <li class="list-link"><img class="python" src="./assets/images/langs/lang-python.png"
-                                        width="35"><a> Python</a></li>
+                                <!--<li class="list-link"><img class="python" src="./assets/images/langs/lang-python.png"
+                                        width="35"><a> Python</a></li>!-->
+            
 
                                 <p id="formacao-academica-outros">E muitas outras citadas na seção de competências do
                                     meu perfil do <a
@@ -76,14 +79,14 @@
 
                     <section class="others">
                         <h3>Formação acadêmica:</h3>
-                        <p>Sou formado em  sistemas de informação pela <a class="link"
+                        <p>Sou formado em análise em desenvolvimento de sistemas pela <a class="link"
                                 href="https://www.pucminas.br" target="_blank" title="PUC-MINAS">PUC-MINAS</a></p>
                         <p>Atualmente, trabalho como arquiteto de software na <a href="https://www.quanticsoftware.net/"
                                 class="link" target="_blank" title="Quantic Software">Quantic Software</a>.</p>
                     </section>
 
                     <section class="site-map">
-                        <h1>Mapa do site --></h1>
+                        <!--<h1>Mapa do site</h1>
 
                         <div class="site-title">
                             <ul class="titulo">
@@ -95,7 +98,9 @@
                             <li><a class="link" href="#experiencias">Experiências</a></li>
                             <li><a class="link" href="#formacao-academica-outros">Formação acadêmica e outros</a></li>
                             <li><a class="link" href="#rodape">Rodapé/Footer</a></li>
-                        </ul>
+                        </ul>!-->
+                        <h3>Informações de contato:</h3>
+                        <p>Meu e-mail pessoal para contato: <a href="mailto:fafnir595@gmail.com" class="link" target="_blank" title="Clique aqui para contatar-me">fafnir595@gmail.com</a></p>
                     </section>
                 </div>
             </div>
@@ -103,8 +108,8 @@
         <footer class="text-center text-white bg-white" id="rodape">
             <div class="container pt-4">
                 <section class="mb-4">
-                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#" role="button"
-                        title="Meu servidor do Discord(Em desenvolvimento)" data-mdb-ripple-color="dark"><i
+                    <a class="btn btn-link btn-floating btn-lg text-dark m-1" id="in-dev" role="button"
+                        title="Meu servidor do Discord(Em desenvolvimento)" href="javascript:void(0);" data-mdb-ripple-color="dark"><i
                             class="fab fa-discord"></i></a>
                     <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://discord.gg/5Q6mtDHW4W"
                         title="Servidor do Discord do servidor de SA-MP em que trabalho" target="_blank" role="button"
@@ -122,6 +127,23 @@
                 &copy; Felipe.me - 2020 - 2023
             </div>
         </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+        <script src="./_static/sweetalert/sweetalert2.js"></script>
+
+        <script>
+               $('#in-dev').click(() => {
+                Swal.fire({
+                    icon: 'error',
+                    text: 'Meu servidor do Discord ainda está em desenvolvimento...',
+                    toast: true,
+                    confirmButtonText: "Entendido!",
+                    timer: 3000,
+                    timerProgressBar: true,
+                });
+            })
+        </script>
     </div>
 
 </body>

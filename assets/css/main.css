@@ -21,32 +21,33 @@
     padding: 5rem;
 }
 
+#stack {
+    padding-right: 0.9rem;
+}
+
 .techs {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    flex-direction: wrap;
-    flex-wrap: wrap;
-    overflow: auto;
-    line-height: 1.5;
+    flex-direction: row;
+    padding: 5px;
+    /*flex-wrap: wrap;*/
+    /*overflow: auto;
+    line-height: 1.5;*/
 }
 
 .break ul {
     list-style: none;
 }
 
-.site-map {
-    display: flex;
-    align-items: center;
-    flex-direction: wrap;
-    flex-wrap: wrap;
-    margin: 0 auto;
-}
-
 .break {
     flex-basis: 100%;
 }
 
-.techs img {
+.techs ul img {
     border-radius: 50%;
+}
+
+#rodape {
+    user-select: none;
 }
