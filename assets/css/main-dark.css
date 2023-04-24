@@ -1,10 +1,12 @@
+@import url(popup-dark.css);
+
 .body {
     background-color: var(--bg-color);
     color: var(--txt-color);
 }
 
 :root {
-    --bg-color: #010e25e0;
+    --bg-color: #010002fa;
     --txt-color: #ffffff;
 }
 
@@ -48,14 +50,12 @@
     border-radius: 50%;
 }
 
-#rodape {
+#rodape-foot, #footer-links, #rodape, footer {
     user-select: none;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
 }
 
-#link-ic {
-    color: #fff;
-}
-
-#link-ic:hover {
-    opacity: 50%;
+.popup {
+    background-color: var(--bg-color);
 }

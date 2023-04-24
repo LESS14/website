@@ -1,0 +1,62 @@
+
+
+.popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 500px;
+            height: 200px;
+            text-align: center;
+            background-color: var(--bg-color);
+            box-sizing: border-box;
+            padding: 10px;
+            z-index: 100;
+            display: none;
+}
+
+.popup:active {
+    overflow: hidden;
+}
+
+#close-button-nan {
+    float: right;
+    cursor: pointer;
+}
+
+.popup pre {
+    border: 3px solid #fff;
+    text-align: center;
+    margin: 3rem;
+    cursor: pointer;
+}
+
+#copy-button-nan {
+    position: absolute;
+    margin-left: 9.5rem;
+    cursor: pointer;
+}
+
+    [aria-label] {
+    position: relative;
+    }
+    
+    [aria-label]::after {
+    content: attr(aria-label);
+    display: none;
+    position: absolute;
+    top: 110%;
+    left: 0px;
+    z-index: 5000;
+    pointer-events: none;
+    padding: 7px 8px;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: verdana;
+    color: #fff;
+    background-color: #000;
+    }
+    
+    [aria-label]:hover::after {
+    display: block;
+    }
