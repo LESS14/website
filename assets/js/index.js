@@ -6,5 +6,5 @@ function copy(link) {
     input.select();
     document.execCommand("copy"); 
     input.remove();
-    alert("Link copiado para a área de transferência!");
+    alert("Conteúdo copiado para a área de transferência!");
 }
