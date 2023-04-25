@@ -9,6 +9,8 @@
     color-scheme: var(--color-scheme);
     color: var(--text-color);
     font-size: 15pt;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .content {
