@@ -1,6 +1,8 @@
 .body {
     background-color: var(--bg-color);
     color: var(--txt-color);
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 :root {
