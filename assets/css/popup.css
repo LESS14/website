@@ -1,18 +1,16 @@
-
-
 .popup {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 500px;
-            height: 200px;
-            text-align: center;
-            background-color: var(--bg-color);
-            box-sizing: border-box;
-            padding: 10px;
-            z-index: 100;
-            display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 200px;
+    text-align: center;
+    background-color: var(--bg-color);
+    box-sizing: border-box;
+    padding: 10px;
+    z-index: 100;
+    display: none;
 }
 
 .popup:active {
@@ -25,7 +23,7 @@
 }
 
 .popup pre {
-    border: 3px solid #eee;
+    border: 3px solid #fff;
     text-align: center;
     margin: 3rem;
     cursor: pointer;
@@ -37,11 +35,11 @@
     cursor: pointer;
 }
 
-    [aria-label] {
+[aria-label] {
     position: relative;
-    }
-    
-    [aria-label]::after {
+}
+
+[aria-label]::after {
     content: attr(aria-label);
     display: none;
     position: absolute;
@@ -55,8 +53,8 @@
     font-family: verdana;
     color: #fff;
     background-color: #000;
-    }
-    
-    [aria-label]:hover::after {
+}
+
+[aria-label]:hover::after {
     display: block;
-    }
+}
