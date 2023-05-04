@@ -61,3 +61,27 @@
 #link-ic:hover {
     opacity: 50%;
 }
+
+.doge-image img:hover {
+    bottom: 0;
+}
+
+.doge-image a {
+    display: inline-block;
+    position: absolute;
+    bottom: -15px;
+    margin: 0;
+    right: 20%;
+}
+
+.doge-image img {
+    display: block;
+    position: fixed;
+    cursor: pointer;
+    bottom: -75px;
+    margin: 0;
+    right: 20%;
+    transition-property: bottom;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+}
